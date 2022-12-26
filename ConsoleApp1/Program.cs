@@ -15,8 +15,11 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
-        
-            var xml = XElement.Load(@"C:\Users\Александр\Desktop\333.xml");
+
+            // var xml = XElement.Load(@"C:\Users\Александр\Desktop\333.xml");
+            Console.WriteLine("Введите путь к файлу  XML");
+            var path = Console.ReadLine();
+            var xml = XElement.Load(path);
             using (StreamWriter sw = new StreamWriter(@"file2.csv"))
             {
                 foreach (XElement mod in xml.Elements("module"))
@@ -30,6 +33,8 @@ namespace ConsoleApp1
                     
                 }
             }
+            Console.WriteLine("Файл сохранен в папку с этим решением(ConsoleApp1/ConsoleApp1/bin/Debug).Нажмите Enter чтобы закрыть консоль");
+            Console.ReadKey();
            
         }
     }
