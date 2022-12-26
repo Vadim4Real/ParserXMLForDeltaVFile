@@ -17,7 +17,7 @@ namespace ConsoleApp1
         {
 
             // var xml = XElement.Load(@"C:\Users\Александр\Desktop\333.xml");
-            Console.WriteLine("Введите путь к файлу  XML");
+            Console.WriteLine("Введите путь к файлу XML");
             var path = Console.ReadLine();
             var xml = XElement.Load(path);
             using (StreamWriter sw = new StreamWriter(@"file2.csv"))
