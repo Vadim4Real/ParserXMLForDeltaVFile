@@ -27,12 +27,7 @@ namespace ConsoleApp1
 
 
                     sw.WriteLine(tag.Value +" "+ disc.Value);
-                    //sw.WriteLine(disc.Value);
                     
-
-                    // Console.WriteLine(disc.Value);
-                    //Console.ReadKey();
-                    //File.WriteAllText(path,tag.ToString()+disc.ToString());
                 }
             }
            
